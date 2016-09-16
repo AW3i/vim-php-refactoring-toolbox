@@ -49,18 +49,18 @@ endif
 
 " Refactoring mapping {{{
 if g:vim_php_refactoring_use_default_mapping == 1
-    nnoremap <unique> <Leader>rlv :call PhpRenameLocalVariable()<CR>
-    nnoremap <unique> <Leader>rcv :call PhpRenameClassVariable()<CR>
-    nnoremap <unique> <Leader>eu :call PhpExtractUse()<CR>
-    nnoremap <unique> <Leader>rm :call PhpRenameMethod()<CR>
-    vnoremap <unique> <Leader>ec :call PhpExtractConst()<CR>
-    nnoremap <unique> <Leader>ep :call PhpExtractClassProperty()<CR>
-    vnoremap <unique> <Leader>em :call PhpExtractMethod()<CR>
-    nnoremap <unique> <Leader>np :call PhpCreateProperty()<CR>
-    nnoremap <unique> <Leader>du :call PhpDetectUnusedUseStatements()<CR>
-    vnoremap <unique> <Leader>== :call PhpAlignAssigns()<CR>
-    nnoremap <unique> <Leader>sg :call PhpCreateSettersAndGetters()<CR>
-    nnoremap <unique> <Leader>da :call PhpDocAll()<CR>
+    nnoremap <silent><unique> <Leader>rlv :call PhpRenameLocalVariable()<CR>
+    nnoremap <silent><unique> <Leader>rcv :call PhpRenameClassVariable()<CR>
+    nnoremap <silent><unique> <Leader>eu :call PhpExtractUse()<CR>
+    nnoremap <silent><unique> <Leader>rm :call PhpRenameMethod()<CR>
+    vnoremap <silent><unique> <Leader>ec :call PhpExtractConst()<CR>
+    nnoremap <silent><unique> <Leader>ep :call PhpExtractClassProperty()<CR>
+    vnoremap <silent><unique> <Leader>em :call PhpExtractMethod()<CR>
+    nnoremap <silent><unique> <Leader>np :call PhpCreateProperty()<CR>
+    nnoremap <silent><unique> <Leader>du :call PhpDetectUnusedUseStatements()<CR>
+    vnoremap <silent><unique> <Leader>== :call PhpAlignAssigns()<CR>
+    nnoremap <silent><unique> <Leader>sg :call PhpCreateSettersAndGetters()<CR>
+    nnoremap <silent><unique> <Leader>da :call PhpDocAll()<CR>
 endif
 " }}}
 
